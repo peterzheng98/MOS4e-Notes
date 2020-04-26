@@ -113,3 +113,42 @@
      - Unlike semaphores, condition variables have no memory.
      - **Potential data loss**: If a signal is sent to a condition variable on which no thread is waiting, the signal will lost.
      - Control by signals.
+7. Monitors: (管程, P138)
+   - A collection of procedures, variables and data structures that are all grouped together in a special kind of module or package.
+   - A monitor is a synchronization construct that allows threads to have both mutual exclusion and the ability to wait (block) for a certain condition to become false.
+   - Thread safe interface.
+8. Message Passing: Authentication and acknowledgement mechanism.
+9. Barriers: Allow groups of processes to synchronize.
+10. Avoid Locks: RCU(Read-Copy-Update):
+    - In Linux Implementation: By memory barrier.
+    - ??
+
+## Scheduling
+1. Scheduling Algorithm Goal:
+   1. All Systems:
+      - Fairness: giving each process a fair share of the CPU
+      - Policy enforcement: seeing that stated policy is carried out
+      - Balance: keeping all parts of the system busy
+   2. Batch Systems:
+      - Throughput: maximize jobs per hour
+      - Turnaround Time: minimize time between submission and termination
+      - CPU Utilization: keep the CPU busy all the time
+   3. Interactive Systems:
+      - Response time: respond to requests quickly
+      - Proportionality: meet users' expectations
+   4. Real-time systems
+      - Meeting deadlines: avoid losing data
+      - Predictability: avoid quality degradation in multimedia systems
+2. First-Come, First-Served(Batch System)
+3. Shortest Job First(Batch System)
+4. Shortest Remaining Time Next(Batch System)
+5. Round-Robin
+6. Priority Scheduling
+
+## Classical IPC Problems
+1. The dining philosophers problem
+   - Due to deadlock and not release the resource
+   - Not enough resource
+2. The readers and writers problem
+   - A file with multiple readers and writers.
+   - Read First or Write First?
