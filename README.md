@@ -4,7 +4,7 @@ The notes for preparing interview.
 
 ## Progress
 - [x] Chapter 2 Processes and Threads
-- [ ] Chapter 3 Memory Management
+- [x] Chapter 3 Memory Management
 - [ ] Chapter 4 File Systems
 - [ ] Chapter 5 I/O
 - [ ] Chapter 6 Deadlocks
