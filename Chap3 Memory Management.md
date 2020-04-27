@@ -40,3 +40,15 @@
    - Record the real physical address.
    - Can be very slow since the address is sorted by physical address.
    - Usually use hash to implement high speed query.
+
+## Page Replacement Algorithms
+1. Not Recently Used Page Replacement
+2. FIFO
+3. Second-Chance Page Replacement
+4. Clock Page Replacement
+5. LRU
+6. Working set: When use, when swap
+7. WSClock: Like Second-Change Page Replacement, but do replace in clock.
+
+## Segmentation
+Stack? Data?
